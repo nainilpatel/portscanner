@@ -1,0 +1,23 @@
+Explanation of the Code
+scan_port(): This function takes an IP address and port as arguments. It tries to connect to the port on the specified IP and checks if the port is open. If the connection is successful, it prints that the port is open.
+port_scanner(): This function initiates the scan by creating a thread for each port in the specified range. Each thread runs scan_port() for a specific port, allowing multiple ports to be scanned simultaneously.
+main(): This function collects user input (IP address/domain and port range) and starts the scanning process.
+
+How to Run the Script
+Save this code to a file, for example, port_scanner.py.
+Run it from the command line:
+bash
+Copy code
+python port_scanner.py
+Enter the IP address or domain and port range you want to scan.
+Important Notes
+Threading: Using threads speeds up the scan, especially when scanning a large range of ports.
+Error Handling: The script will handle invalid domains or IP addresses gracefully.
+Timeouts: A 1-second timeout is set to prevent hanging on closed ports.
+This scanner is a simple, effective tool for basic port scanning tasks. Let me know if you need further customizations or explanations!
+
+
+
+
+
+
